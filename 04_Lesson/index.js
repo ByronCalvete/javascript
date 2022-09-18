@@ -140,7 +140,7 @@
 // 	console.log(`${key}: ${value}`); // Returns pairs key value
 // }
 
-// // // Object.keys()
+// // Object.keys()
 // const dog = {
 // 	name: 'Rocky',
 // 	sleep: true,
