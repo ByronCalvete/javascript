@@ -55,3 +55,18 @@
 // 	console.log("Click");
 // 	title.textContent = "Title from JS";
 // });
+
+// // Practice
+const inputColor = document.getElementById("inputColor");
+const btnVisualizar = document.getElementById("btnVisualizar");
+const parrafoExa = document.getElementById("parrafoExa");
+const cardColor = document.getElementById("cardColor");
+
+btnVisualizar.addEventListener("click", () => {
+	parrafoExa.textContent = inputColor.value;
+	cardColor.style.backgroundColor = inputColor.value;
+	navigator.clipboard
+		.writeText(inputColor.value)
+		.then(() => console.log("texto copiado"))
+		.catch((e) => console.log(e));
+});

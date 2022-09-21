@@ -7,3 +7,4 @@
 - querySelector() vs getElementById()
 - element
 - Events - addEventListener()
+- Practice
