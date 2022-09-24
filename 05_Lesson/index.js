@@ -57,16 +57,86 @@
 // });
 
 // // Practice
-const inputColor = document.getElementById("inputColor");
-const btnVisualizar = document.getElementById("btnVisualizar");
-const parrafoExa = document.getElementById("parrafoExa");
-const cardColor = document.getElementById("cardColor");
+// const inputColor = document.getElementById("inputColor");
+// const btnVisualizar = document.getElementById("btnVisualizar");
+// const parrafoExa = document.getElementById("parrafoExa");
+// const cardColor = document.getElementById("cardColor");
 
-btnVisualizar.addEventListener("click", () => {
-	parrafoExa.textContent = inputColor.value;
-	cardColor.style.backgroundColor = inputColor.value;
-	navigator.clipboard
-		.writeText(inputColor.value)
-		.then(() => console.log("texto copiado"))
-		.catch((e) => console.log(e));
-});
+// btnVisualizar.addEventListener("click", () => {
+// 	parrafoExa.textContent = inputColor.value;
+// 	cardColor.style.backgroundColor = inputColor.value;
+// 	navigator.clipboard
+// 		.writeText(inputColor.value)
+// 		.then(() => console.log("texto copiado"))
+// 		.catch((e) => console.log(e));
+// });
+
+// // createElement
+// const list = document.getElementById("list");
+
+// const element = document.createElement("li");
+// element.textContent = "Element from JS";
+// console.log(element); // <li>Element from JS</li>
+
+// list.appendChild(element);
+
+// const arrayCountries = ["Colombia", "Argentina", "Spain"];
+
+// arrayCountries.forEach((country) => {
+// 	// This produces reflow like innerHTML
+// 	const element = document.createElement("li");
+// 	element.textContent = country;
+// 	list.appendChild(element);
+// });
+
+// // Fragment
+// const list = document.getElementById("list");
+
+// const countryArray = ["Colombia", "Argentina", "Spain"];
+
+// const fragment = document.createDocumentFragment();
+// const fragment = new DocumentFragment();
+
+// countryArray.forEach((country) => {
+// 	const element = document.createElement("li");
+// 	element.textContent = country;
+// 	fragment.appendChild(element);
+// });
+
+// now we test insertBefore() method
+
+// countryArray.forEach((country) => {
+// 	const newNode = document.createElement("li");
+// 	newNode.textContent = country;
+
+// 	const referenceNode = fragment.firstChild;
+// 	console.log(referenceNode);
+// 	fragment.insertBefore(newNode, referenceNode);
+// 	console.log(fragment);
+// });
+
+// list.appendChild(fragment);
+
+// // Practice createElement
+// const list = document.getElementById("list");
+
+// const countryArray = ["Colombia", "Argentina", "Spain"];
+
+// const fragment = document.createDocumentFragment();
+
+// countryArray.forEach((country) => {
+// 	const li = document.createElement("li");
+// 	li.className = "list";
+// 	const b = document.createElement("b");
+// 	b.textContent = "País: ";
+// 	const span = document.createElement("span");
+// 	span.className = "text-primary";
+// 	span.textContent = country;
+
+// 	li.appendChild(b);
+// 	li.appendChild(span);
+
+// 	fragment.appendChild(li);
+// });
+
+// list.appendChild(fragment);

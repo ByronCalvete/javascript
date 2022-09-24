@@ -8,3 +8,6 @@
 - element
 - Events - addEventListener()
 - Practice
+- createElement
+- Fragment
+- Practice createElement
