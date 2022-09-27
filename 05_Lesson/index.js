@@ -140,3 +140,23 @@
 // });
 
 // list.appendChild(fragment);
+
+// // Template
+// const list = document.getElementById("list");
+// const fragment = document.createDocumentFragment();
+// const testTemplate = document.getElementById("testTemplate");
+
+// const countryArray = ["Colombia", "Argentina", "Spain"];
+
+// const clickCountries = (e) => console.log("click", e.target);
+
+// countryArray.forEach((country) => {
+// 	const cloneTemplate = testTemplate.content.firstElementChild.cloneNode(true);
+// 	cloneTemplate.querySelector("span").textContent = country;
+
+// 	cloneTemplate.addEventListener("click", clickCountries);
+
+// 	fragment.appendChild(cloneTemplate);
+// });
+
+// list.appendChild(fragment);
