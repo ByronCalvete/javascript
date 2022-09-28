@@ -6,4 +6,5 @@
 - [03_Lesson](03_Lesson) &rarr; Key Concepts
 - [04_Lesson](04_Lesson) &rarr; Objects
 - [05_Lesson](05_Lesson) &rarr; DOM part 1
+- [06_Lesson](06_Lesson) &rarr; Array Methods
 - [Practices](practices) &rarr; Practices
