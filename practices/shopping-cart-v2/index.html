@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Byron Calvete">
+    <meta name="description" content="Shopping Cart v2 - Practice with Arrays">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart v2</title>
+    <link rel="icon" href="../../icon-js.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5 -> No problem with this! -->
+  </head>
+  <body>
+    <main class="container mt-5">
+      <div class="row text-center">
+        <article class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Strawberry 🍓</h5>
+              <button class="btn btn-outline-primary" data-fruit="Strawberry">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Banana 🍌</h5>
+              <button class="btn btn-outline-primary" data-fruit="Banana">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Apple 🍏</h5>
+              <button class="btn btn-outline-primary" data-fruit="Apple">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <section class="container mt-3">
+      <ul class="list-group" id="my-cart"></ul>
+    </section>
+
+    <template id="itemTemplate">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span class="lead">Strawberry</span>
+        <span class="badge bg-primary rounded-pill">12</span>
+      </li>
+    </template>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
