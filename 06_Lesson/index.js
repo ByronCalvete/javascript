@@ -89,3 +89,85 @@
 
 // const array3 = [...array1, ...array2];
 // console.log(array3); // ['a', 'b', 'c', 'd', 'e', 'f']
+
+// // Reduce method
+// const numbers = [1, 2, 3, 4, 5];
+
+// const addAllNumbers = numbers.reduce(
+// 	(accumulator, currentValue) => accumulator + currentValue
+// );
+// console.log(addAllNumbers); // 15
+
+// const arrayNumbers = [
+// 	[0, 1],
+// 	[2, 3],
+// 	[4, 5],
+// ];
+
+// const onlyNumbers = arrayNumbers.reduce((accumulator, currentValue) =>
+// 	accumulator.concat(currentValue)
+// );
+// console.log(onlyNumbers); // [0, 1, 2, 3, 4, 5]
+
+// const arrayPlain1 = [].concat(...arrayNumbers);
+// console.log(arrayPlain1); // [0, 1, 2, 3, 4, 5]
+
+// const pets = [
+// 	{ name: "Pelusa", age: "12", type: "cat" },
+// 	{ name: "Pichuchi", age: 12, type: "dog" },
+// 	{ name: "Rocky", age: 3, type: "dog" },
+// ];
+
+// const indexed = pets.reduce(
+// 	(accumulator, currentValue) => ({
+// 		...accumulator,
+// 		[currentValue.name]: currentValue,
+// 	}),
+// 	{}
+// );
+// console.log(indexed); // {Pelusa: { name: "Pelusa", age: "12", type: "cat" }, Pichuchi: { name: "Pichuchi", age: 12, type: "dog" }, Rocky: { name: "Rocky", age: 3, type: "dog" }}
+// console.log(indexed["Rocky"]); // {name: 'Rocky', age: 3, type: 'dog'}
+
+// const nestedArray = [1, [2, 3], 4, [5]];
+// const plainArray = nestedArray.reduce(
+// 	(accumulator, currentValue) => accumulator.concat(currentValue),
+// 	[]
+// );
+// console.log(plainArray); // [1, 2, 3, 4, 5]
+
+// // flat method
+// const arrayNumbers = [
+// 	[0, 1],
+// 	[2, 3],
+// 	[4, 5],
+// ];
+
+// const arrayPlain1 = arrayNumbers.flat();
+// console.log(arrayPlain1); // [0, 1, 2, 3, 4, 5]
+
+// const arrayFlat2 = [1, 2, [3, 4, [5, 6]]];
+// const arrayPlain2 = arrayFlat2.flat(2);
+// console.log(arrayPlain2); // [1, 2, 3, 4, 5, 6]
+
+// // split method
+// const plainTextMonths = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec";
+// const arraysMonths = plainTextMonths.split(",");
+// console.log(arraysMonths); // ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+// // join method
+// const arrayMonths = [
+// 	"Jan",
+// 	"Feb",
+// 	"Mar",
+// 	"Apr",
+// 	"May",
+// 	"Jun",
+// 	"Jul",
+// 	"Aug",
+// 	"Sep",
+// 	"Oct",
+// 	"Nov",
+// 	"Dec",
+// ];
+// const plainTextMonths = arrayMonths.join(" - ");
+// console.log(plainTextMonths); // Jan - Feb - Mar - Apr - May - Jun - Jul - Aug - Sep - Oct - Nov - Dec

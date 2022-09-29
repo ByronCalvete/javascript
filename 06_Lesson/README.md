@@ -7,3 +7,7 @@
 - slice
 - concat
 - Spread syntax
+- Reduce
+- flat
+- split
+- join
