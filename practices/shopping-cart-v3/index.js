@@ -1,7 +1,7 @@
 const cart = document.getElementById("my-cart");
-const templateList = document.getElementById("itemTemplate");
 const footer = document.getElementById("footer");
-const templateFooter = document.getElementById("templateFooter");
+const templateList = document.getElementById("listTemplate");
+const templateFooter = document.getElementById("footerTemplate");
 const fragment = document.createDocumentFragment();
 
 // Event delegation
@@ -24,18 +24,20 @@ let fruitsCart = [];
 
 const addToCart = (e) => {
 	const product = {
-		title: e.target.dataset.fruit,
+		name: e.target.dataset.fruit,
 		id: e.target.dataset.fruit,
 		quantity: 1,
 		price: parseInt(e.target.dataset.price),
 	};
 
-	const index = fruitsCart.findIndex((item) => item.id === product.id);
+	const index = fruitsCart.findIndex((fruit) => fruit.id === product.id);
 
 	if (index === -1) {
 		fruitsCart.push(product);
 	} else {
 		fruitsCart[index].quantity += 1;
+		// fruitsCart[index].price =
+		// 	fruitsCart[index].quantity * fruitsCart[index].price;
 	}
 
 	paintCart();
@@ -46,12 +48,13 @@ const paintCart = () => {
 
 	fruitsCart.forEach((item) => {
 		const cloneTemplate = templateList.content.cloneNode(true);
-		cloneTemplate.querySelector(".text-white .lead").textContent = item.title;
+		// first li
 		cloneTemplate.querySelector(".badge").textContent = item.quantity;
+		cloneTemplate.querySelector(".text-white .lead").textContent = item.name;
 
+		//second li
 		cloneTemplate.querySelector("div .lead span").textContent =
-			item.price * item.quantity;
-
+			item.quantity * item.price;
 		cloneTemplate.querySelector(".btn-danger").dataset.id = item.id;
 		cloneTemplate.querySelector(".btn-success").dataset.id = item.id;
 
@@ -73,10 +76,11 @@ const paintFooter = () => {
 
 	if (total === 0) return;
 
-	const cloneFooter = templateFooter.content.firstElementChild.cloneNode(true);
-	cloneFooter.querySelector("span").textContent = total;
+	const cloneTemplate =
+		templateFooter.content.firstElementChild.cloneNode(true);
+	cloneTemplate.querySelector("span").textContent = total;
 
-	footer.appendChild(cloneFooter);
+	footer.appendChild(cloneTemplate);
 };
 
 const addFromItem = (e) => {
