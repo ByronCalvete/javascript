@@ -1,4 +1,4 @@
-# Shopping Cart v2
+# Shopping Cart v3
 
 ## We implement the cart with arrays and templates for list and footer
 
