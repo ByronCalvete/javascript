@@ -18,3 +18,11 @@ When a program runs, we have two phases:
 - Call Stack maintains the **order of execution** of execution contexts. The Call Stack is only for managing Execution contexts (GEC: Global Execution Context, E1: Execution Context 1, E2: Exection Context 2, etc.). After the program is finished, the call stack gets empty. Others names for Call Stack are Execution Content Stack, Program Stack, Control Stack, Runtime Stack and Machine Stack.
 
 ![](img/call-stack.png)
+
+## Hoisting in JavaScript (variables & functions)
+
+Hoisting is a phenomenon in JavaScript by you can access these variables and functions even before you have initialized or you put some value in it (in old JavaScript with var declaration).
+
+![](img/hoisting-with-var.png)
+
+When we use arrow functions and we try to access to the function before you have initialized, its behavior is like other variable, **undefined** (at this point we use var for declaration).
