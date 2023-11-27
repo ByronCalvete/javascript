@@ -26,3 +26,9 @@ Hoisting is a phenomenon in JavaScript by you can access these variables and fun
 ![](img/hoisting-with-var.png)
 
 When we use arrow functions and we try to access to the function before you have initialized, its behavior is like other variable, **undefined** (at this point we use var for declaration).
+
+## How functions work in JS & Variable Environment
+
+To keep in mind, with hoisting and call stack concepts, this code run and print in console the different values of **x**. It's all about memory allocation, code execution and call stack move in and move out in.
+
+![](img/function-variable-environment.png)
