@@ -29,6 +29,6 @@ When we use arrow functions and we try to access to the function before you have
 
 ## How functions work in JS & Variable Environment
 
-To keep in mind, with hoisting and call stack concepts, this code run and print in console the different values of **x**. It's all about memory allocation, code execution and call stack move in and move out in.
+To keep in mind, with hoisting and call stack concepts, this code run and print in console the different values of **x**. It's all about memory allocation, code execution and call stack move in and move out.
 
 ![](img/function-variable-environment.png)
