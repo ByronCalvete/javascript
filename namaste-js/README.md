@@ -32,3 +32,9 @@ When we use arrow functions and we try to access to the function before you have
 To keep in mind, with hoisting and call stack concepts, this code run and print in console the different values of **x**. It's all about memory allocation, code execution and call stack move in and move out.
 
 ![](img/function-variable-environment.png)
+
+## Shortest JS Program. window & this keyword
+
+The shortest JS program is an empty program. Always in JS, even when the program is empty, is created and GEC (Global Execution Context), big object **window** (we call in the browser the window object) and the **this** keyword that in this case is equal or make reference to the window object.
+
+![](img/shortest-js-program.png)
