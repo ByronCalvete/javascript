@@ -38,3 +38,10 @@ To keep in mind, with hoisting and call stack concepts, this code run and print 
 The shortest JS program is an empty program. Always in JS, even when the program is empty, is created and GEC (Global Execution Context), big object **window** (we call in the browser the window object) and the **this** keyword that in this case is equal or make reference to the window object.
 
 ![](img/shortest-js-program.png)
+
+## undefined vs no defined in JS
+
+- Undefined &rarr; is when the variables has an space in memory (created in memory allocation phase). Or when we created a variable but no assign to it a particular value.
+- No definded &rarr; is when the variables hasn't an space in memory or in other words, the variable is not declared in the program.
+
+![](img/undefined-vs-no-defined.png)
