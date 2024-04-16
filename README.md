@@ -1,6 +1,6 @@
 # JavaScript Guide
 
 ## Index
-- [Namaste JS](namaste-js)
+- [Basic Path](basic-js)
 - [old-bluuweb](old-bluuweb)
-- [huxn JS - Mid-lvl](huxn-js)
+- [Mid Path](mid-js)

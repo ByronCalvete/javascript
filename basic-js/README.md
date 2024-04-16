@@ -1,4 +1,4 @@
-# Series Guide
+# Basic Path - Series Guide
 
 ## How JavaScript Works and Execution Context
 

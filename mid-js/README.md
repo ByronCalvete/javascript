@@ -1,3 +1,3 @@
-# huxn JS - Mid-lvl
+# Mid - Path
 
 ## Index
